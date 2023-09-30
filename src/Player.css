@@ -1,0 +1,80 @@
+html{
+    background-image: url('./pics/background.jpg');
+    background-size: cover;
+}
+main-widget{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 18px;
+    color: rgb(0, 0, 0);
+}
+
+#topOverlay, player-top{
+    font-size: 40px;
+    width: 1000px;
+    height: 300px;
+    border-radius: 15px 15px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+}
+player-top::before{
+    border-radius: 15px 15px 0px 0px;
+    background-image: url("./pics/moss.jpg");
+    background-size: cover;;
+    content:'';
+    position: absolute;
+    inset: 0;
+    opacity: .7;
+}
+
+.or{
+    background-color: white;
+    font-size: 40px;
+    border: none;
+    border-radius: 50%;
+    position: fixed;
+    top: 48%;
+    left: 48%;
+    width: 50px;
+    height: 50px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    user-select: none;
+}
+
+#botOverlay, player-bottom{
+    font-size: 40px;
+    width: 1000px;
+    height: 300px;
+    border-radius: 0px 0px 15px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+}
+player-bottom::before{
+    border-radius: 0px 0px 15px 15px;
+    background-image: url("./pics/rice.jpg");
+    background-size: cover;
+    content:'';
+    position: absolute;
+    inset: 0;
+    opacity: .7;
+}
+.nameandtd{
+    isolation: isolate;
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+current-score{
+    font-size: 25px;
+}
