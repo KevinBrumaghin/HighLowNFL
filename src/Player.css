@@ -75,6 +75,6 @@ player-bottom::before{
     justify-content: center;
 }
 
-current-score{
+#score{
     font-size: 25px;
 }

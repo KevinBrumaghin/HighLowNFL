@@ -115,7 +115,7 @@ export default function MainWidget(){
     return(
         <>
             <GetScore score = {score}/>
-            <main-widget>
+            <main-widget id="widget">
                 <PlayerTop players = {players} setScore = {setScore}/>
                 <PlayerBottom players = {players} setScore = {setScore}/>
             </main-widget>

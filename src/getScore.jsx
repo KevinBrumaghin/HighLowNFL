@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
+
 export default function GetScore({score}){
-    return <current-score>Score: {score}</current-score>;
+    return <curr-score id="score">Score: {score}</curr-score>;
 }
 
 GetScore.propTypes = {
